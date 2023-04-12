@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="form1" method="post" action="">
+        색을 선택해주세요 : <input type="color"><br>
+        숫자를 입력하세요(0~100) : <input type="number" max="100" min="0" step="10" value="50"><br>
+        이 태그 모죠?(1~10) <input type="range" min="1" max="10" value="5">
+        성별을 선택하세요
+        <select name="gen">
+            <option value="female">여성</option>
+            <option value="male">남성</option>
+        </select>
+    </form>
+
+    <h3>원하시는 브라우저를 선택해주세요.</h3>
+    <form action="process.jsp">
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+            <option value="구글 크롬">
+            <option value="엣지">
+            <option value="오페라">
+            <option value="사파리">
+            <option value="파이어폭스">
+        </datalist>
+    </form>
+
+    <h1>2026학년도 대학수학능력시험 영어과목</h1><br>
+    <form action="" name = "test">
+    <h3>다음 지문에서 설명하는 사람은 누구인가?</h3>
+    <fieldset>
+    <legend>보기</legend>
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br><hr>
+    정답입력 : <input type="text" required placeholder="정답을 입력하세요"><br>
+    <input type="radio" name="select" id="1" value="1">
+    <label for="1">노예1</label><br>
+    <input type="radio" name="select" id="2" value="2">
+    <label for="2">노예2</label><br>
+    <input type="radio" name="select" id="3" value="3">
+    <label for="3">노예3</label><br>
+    <input type="radio" name="select" id="4" value="4">
+    <label for="4">노예4</label><br>
+    <input type="radio" name="select" id="5" value="5">
+    <label for="5">노예5</label><br>
+    <br>서술형 답안 파일 제출 :
+    <input type="file" accept="image/jpg, image/png">
+    </fieldset>
+</body>
+</html>
