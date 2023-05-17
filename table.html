@@ -8,16 +8,55 @@
     <style>
         table{
             border-collapse: collapse;
-            background-color: aliceblue;
+            width: 100%;
         }
-        table, th, td{
-            border : 1px solid powderblue;
+        table, td{
+            border-bottom : 1px solid green ;
+            text-align: center;
             padding: 5px;
+        }
+        th{
+            height: 300%;
+            background-color: green;
+            color : white;
+        }
+        caption{
+            caption-side: bottom;
+        }
+        tr:nth-child(2){
+            background-color: palegreen;
+        }
+
+        input[type=text], textarea{
+            font-weight: bold;
+            border: 2px solid black;
+            margin : 10px 0;
+            width: 90%;
+            padding: 6px 10px;
+            display: inline-block;
+            border-radius: 3px;
+        }
+        input[type=submit]{
+            background-color: mediumspringgreen;
+            border: none;
+            color: white;
+            padding: 10px 32px;
+        }
+        input[type=text]:hover{
+            background-image: url('im.jpg');
+            width: 1070px;
+            height: 726px;
+        }
+        input[type=email]:hover{
+            background-image: url('an.jpg');
+            width: 1280px;
+            height: 720px;
         }
     </style>
 </head>
 <body>
     <table>
+        <caption>기말고사 죽음의 표</caption>
         <thead>
             <tr>
                 <th>학번</th>
@@ -29,23 +68,39 @@
         <tbody>
             <tr>
                 <td>1</td>
-                <td>Steve</td>
-                <td>70</td>
-                <td>B-</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Alex</td>
-                <td>90</td>
+                <td>Bill</td>
+                <td>98</td>
                 <td>A+</td>
             </tr>
             <tr>
-                <td>3</td>
-                <td>David</td>
-                <td>80</td>
+                <td>2</td>
+                <td>Steve</td>
+                <td>89</td>
                 <td>B+</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Larry</td>
+                <td>93</td>
+                <td>A-</td>
             </tr>
         </tbody>
     </table>
+
+    <h2>안경 평</h2>
+    <p>받으신 안경을 평가해주세요.</p>
+    <div>
+        <form action="process.jsp">
+            <label for="name">이름</label>
+            <input type="text" id="name" name="name" placeholder="이름"><br>
+            <label for="email">이메일</label>
+            <input type="email" id="email" name="email" placeholder="이메일"><br>
+            <label for="subject">안경 평</label>
+            <textarea id="subject" name="subject" 
+            placeholder="안경을 평가해주세요." style="height:100px"></textarea>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
 </body>
 </html>
