@@ -1,0 +1,67 @@
+@font-face {
+    font-family: abster;
+    src: url(font/abster-webfont.woff) format('woff');
+}
+
+
+* {
+    /*패딩 0, 마진 0, 보더 기본값 설정*/
+}
+
+/* container는 배경을 의미 */
+.container{
+    /*width 100px, height 100vh, 배경 사진 설정(투명도 0.8)*/
+}
+
+/* header 영역은 화면 상단의 Design 로고글자와 메뉴바를 포함한다.  */
+.container .header{
+    /*width 80%, height 80px, 마진, display, 자식 요소 배치*/
+}
+
+/* 화면 왼쪽 상단 글자 로고 스타일 */
+.container .header h1 a{
+    /*텍스트 데코레이션, 색, 폰트패밀리 설정*/
+}
+
+/* 메뉴요소에 대한 스타일링(배치) */
+.container .nav ul li{
+    /*display, 마진 10px 설정*/
+}
+
+/* 메뉴요소에 대한 스타일링(글꼴) */
+.container .nav ul li a{
+    /*텍스트 데코레이션, 색 설정*/
+}
+
+/* 메뉴요소에 대한 스타일링(마우스이벤트_글자색 변경) */
+.container .nav ul li a:hover{
+    /*텍스트 데코레이션, 색 설정*/
+}
+
+.container .hero {
+    /*포지션, 위치(왼, 오 50%) (포지션 -50%, -50%), 색, 가운데 정렬, 폰트 패밀리 설정*/
+}
+
+.container .hero h2{
+    /*글자 크기 60px 조정, 아래 마진 20px*/
+}
+
+.container .hero p{
+    /*글자 크기 22px*/
+}
+
+.container .hero button{
+    background: none;
+    border : 2px solid darkseagreen;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 20px;
+    margin-top: 30px;
+    outline: none;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.container .hero button:hover{
+    background-color: darkslategray;
+}
