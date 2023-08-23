@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #test{
+            background-color: aquamarine;
+        }
+        h1{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<h1>출력할 숫자는?</h1>
+    <h1 id="test">덧셈 결과</h1>
+    <button onclick="printnum()">숫자 출력</button>
+
+    <h1 id="test1">이름</h1>
+    <button onclick="printname()">눌러주세요!</button>
+
+<script>
+    let x = parseInt(prompt("더하고 싶은 첫번째 숫자를 입력하세요"));
+    let y = parseInt(prompt("더하고 싶은 두번째 숫자를 입력하세요"));
+    let z = x+y;
+function printnum(){
+    document.getElementById("test").innerHTML = z;
+}
+
+    let str = prompt("이름을 입력해주세요");
+function printname(){
+    document.getElementById("test1").innerHTML = str;
+}
+</script>
+</body>
+</html>
