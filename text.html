@@ -5,38 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <title>주사위 굴리기</title>
+    <style>
+        * {
+            font-family: 굴림, sans-serif;
+            text-align: center;
+        }
+
+        #dice {
+            height: 100px;
+            width: 100px;
+            margin: 10px auto;
+            background-color: yellow;
+            border: 1px solid gray;
+            border-radius: 10px;
+            font-size: 100px;
+        }
+    </style>
+    <script>
+        function roll() {
+            
+            let r1 = Math.ceil(Math.random()*6);
+        };
+    </script>
 </head>
 <body>
-    <table border="1" id="special">
-        <tr>
-            <td>(1,1) 셀</td>
-            <td>(1,2) 셀</td>
-        </tr>
-        <tr>
-            <td>(2,1) 셀</td>
-            <td>(2,2) 셀</td>
-        </tr>
-    </table>
-    <br>
-    <input type="button" value="행 추가" onclick="insert()">
-    <input type="button" value="행 삭제" onclick="del()">
-    <script>
-        function insert(){
-            let table = document.getElementById("special");
-            let row = table.insertRow(0);
-            let cell1 = row.insertCell(0);
-            let cell2 = row.insertCell(1);
-            cell1.innerHTML = "새로운 셀(1,1)";
-            cell2.innerHTML = "새로운 셀(1,2)";
-        }
-        function del(){
-            let table = document.getElementById("special");
-            let row = table.deleteRow(0);
-            let cell1 = row.deleteCell(-1);
-            let cell2 = row.deleteCell(0);
-            cell1.innerHTML = "새로운 셀(1,1)";
-            cell2.innerHTML = "새로운 셀(1,2)";
-        }
-    </script>
+    <h3>주사위 굴리기 게임입니다.</h3>
+    <p id="dice"> </p>
+    <button onclick="roll()">주사위 굴리기</button>
 </body>
 </html>
