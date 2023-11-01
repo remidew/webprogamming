@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script>
+        function cal() {
+            let answer = document.getElementById('answer').value;
+            let s = document.getElementById("problem").value;
+            let solution = eval(s);
+            if(answer == solution){
+                alert('정답!');
+            }
+            else{
+                alert('틀렸습니다! 정답은 '+solution);
+            }
+        }
+        function fun(){
+            let answer2 = document.getElementById('answer2').value;
+            if(answer2 == 49){
+                alert('나가');
+            }
+            else if(answer2 == 51){
+                alert('정답 ♥');
+            }
+            else{
+                alert('틀렸ㅅㅂ니다!');
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Math Quiz</h1>
+    <input type="text" id="problem" value="12*2+20-30"><br>
+    <input type="text" id="answer">
+    <button onclick="cal()">정답 알아보기</button><hr>
+    <h1>Just Quiz</h1>
+    <input type="text" value ="17+12+11+9"><br>
+    <input type="text" id="answer2">
+    <button onclick="fun()">정답 알아보기</button>
+    <p>모기에 물려버렸다-!!</p>
+</body>
+</html>
